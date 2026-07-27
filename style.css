@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("tree1.avif");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.logo {
+    margin-top: 2px;
+    margin-left: 10px;
+    color: orange;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.menu{
+    height: 70px;
+    width: 200px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+ul li{
+    list-style: none;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 1px;
+}
+
+ul li a{
+    color: beige;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+   color: orange;
+}   
+
+.search{
+    float: left;
+    width: 330px;
+   
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    margin-left: 280px;
+    margin-top: 16px;
+    width: 180px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid orange;
+    margin-top: 13px;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+}
+
+.btn{
+   background-color: orange;
+   width: 180PX;
+   height: 25PX;
+   color: aliceblue;
+   margin-left: 280px;
+   margin-top: 10px;
+   padding: 3px;
+   border-bottom-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: aliceblue;
+    position: relative;
+}
+
+.content p{
+    padding: 15px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 0.3px;
+    line-height: 19px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    margin-left: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 1%;
+}
+
+.content .cn{
+    margin-left: 20px;
+    width: 90px;
+    height: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s ease;
+}
+.cn:hover{
+    background-color: aliceblue;   
+}
+
+.content span{
+    color: orange;
+    font-size: 30px;
+}
+
+.form{
+    height: 280px;
+    width: 240px;
+    position: absolute;
+    top: -20px;
+    left: 570px;
+    border-radius: 10px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    margin-top: 30px;
+    padding: 10px;
+
+}
+
+.form h2{
+    /* margin-left: 60px; */
+    text-align: center;
+    width: 200px;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 15px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 3px;
+}
+
+.form input{
+    height: 20px;
+    width: 207px;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    border-right: none;
+    border-left: none;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: aliceblue;
+    font-family: Arial;
+}
+
+.btnn{
+    height: 30px;
+    width: 210px;
+    margin-left: 0.8px;
+    margin-top: 15px;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.btnn:hover{
+    background-color: aliceblue;
+    color: orange;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: orange;
+}
+
+.liw{
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: -38px;
+}
+
+
+
