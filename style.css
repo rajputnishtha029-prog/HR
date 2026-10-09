@@ -425,45 +425,38 @@ ul li a:hover{
 }
  
 
-/* Navbar responsive fix */
-.navbar {
+/* Navbar alignment */
+ul {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px 28px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
 }
 
-.navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+ul li {
     margin: 0;
 }
 
-.navbar ul li a {
-    text-decoration: none;
+ul li a {
     white-space: nowrap;
+    text-decoration: none;
 }
 
-/* Mobile screen */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
+/* Mobile responsive */
+@media (max-width: 768px) {
+    ul {
         width: 100%;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        gap: 12px 18px;
+        justify-content: center;
+        gap: 18px 24px;
         padding: 0 10px;
+        box-sizing: border-box;
     }
 
-    .navbar ul li a {
+    ul li a {
         font-size: 16px;
     }
 }
