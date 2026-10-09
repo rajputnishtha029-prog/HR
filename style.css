@@ -1,6 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x : hidden;
 }
 
 .main{
@@ -11,33 +17,33 @@
     width: 100%;
 }
 .logo {
-    margin-top: 2px;
-    margin-left: 10px;
+    margin-top: 15px;
+    /* margin-left: 5px; */
     color: orange;
-    font-size: 30px;
+    font-size: 60px;
     font-family: Arial;
-    padding-left: 20px;
+    padding-left: 5px;
     float: left;
 }
 
 .navbar{
-    width: 1200px;
-    height: 75px;
+    width: 1400px;
+    height: 80px;
     margin: auto;
 }
 
 icon{
-    width: 200px;
+    width: 400px;
     float: left;
-    height: 70px;
+    height: 100px;
 }
 
 .menu{
-    height: 70px;
+    height: 100px;
     width: 200px;
     float: left;
-    margin-left: 30px;
-    margin-top: 15px;
+    margin-left: 60px;
+    margin-top: 50px;
 }
 
 ul{
@@ -49,7 +55,7 @@ ul{
 
 ul li{
     list-style: none;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 30px;
     margin-top: 1px;
 }
@@ -66,40 +72,43 @@ ul li a:hover{
    color: orange;
 }   
 
-.search{
-    float: left;
-    width: 330px;
-   
+/* Search Box Container Fix */
+.search {
+  float: right;
+  margin-top: 50px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
 }
 
-.srch{
-    font-family: 'Times New Roman';
-    margin-left: 280px;
-    margin-top: 16px;
-    width: 180px;
-    height: 20px;
-    background: transparent;
-    border: 1px solid orange;
-    margin-top: 13px;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    color: black;
+/* Input Field */
+.srch {
+  font-family: 'Times New Roman';
+  width: 200px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid orange;
+  border-right: none;
+  font-size: 16px;
+  padding: 0 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: #fff;
+  outline: none;
 }
 
-.btn{
-   background-color: orange;
-   width: 180PX;
-   height: 25PX;
-   color: aliceblue;
-   margin-left: 280px;
-   margin-top: 10px;
-   padding: 3px;
-   border-bottom-right-radius: 5px;
-   border-bottom-right-radius: 5px;
+/* Button */
+.btn {
+  width: 90px;
+  height: 35px;
+  background-color: rgb(202, 159, 79);
+  border: 1px solid rgb(202, 159, 79);
+  font-size: 16px;
+  color: aliceblue;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  outline: none;
 }
 
 .btn:focus{
@@ -111,7 +120,7 @@ ul li a:hover{
 }
 
 .content{
-    width: 1200px;
+    width: 1400px;
     height: auto;
     margin: auto;
     color: aliceblue;
@@ -119,25 +128,27 @@ ul li a:hover{
 }
 
 .content p{
+    font-size: 25px;
     padding: 15px;
     padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 0.3px;
-    line-height: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.1px;
+    line-height: 25px;
 }
 
 .content h1{
     font-family: 'Times New Roman';
     margin-left: 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-top: 1%;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 6%;
 }
 
 .content .cn{
+    font-size: 20px;
     margin-left: 20px;
-    width: 90px;
-    height: 20px;
+    width: 150px;
+    height: 40px;
     background-color: orange;
     border: none;
     border-radius: 10px;
@@ -159,11 +170,11 @@ ul li a:hover{
 }
 
 .form{
-    height: 280px;
-    width: 240px;
+    height: 400px;
+    width: 300px;
     position: absolute;
-    top: -20px;
-    left: 570px;
+    top: 60px;
+    left: 1000px;
     border-radius: 10px;
     background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     margin-top: 30px;
@@ -174,26 +185,27 @@ ul li a:hover{
 .form h2{
     /* margin-left: 60px; */
     text-align: center;
-    width: 200px;
+    width: 250px;
     font-family: sans-serif;
     color: orange;
-    font-size: 15px;
+    font-size: 20px;
     background-color: aliceblue;
     border-radius: 10px;
-    margin: 2px;
-    padding: 3px;
+    margin: 15px;
+    padding: 5px;
 }
 
 .form input{
-    height: 20px;
+    height: 40px;
     width: 207px;
     background: transparent;
     border-bottom: 1px solid orange;
     border-right: none;
     border-left: none;
     color: aliceblue;
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 10px;
+    margin-left: 15px;
 }
 
 .form input:focus{
@@ -205,11 +217,12 @@ ul li a:hover{
     font-family: Arial;
 }
 
+
 .btnn{
-    height: 30px;
+    height: 35px;
     width: 210px;
-    margin-left: 0.8px;
-    margin-top: 15px;
+    margin-left: 15px;
+    margin-top: 40px;
     background-color: orange;
     border-radius: 10px;
     padding: 5px;
@@ -222,6 +235,7 @@ ul li a:hover{
 }
 
 .btnn a{
+    font-size: 20px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -229,9 +243,9 @@ ul li a:hover{
 
 .form .link{
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 40px;
 }
 
 .form .link a{
@@ -241,11 +255,172 @@ ul li a:hover{
 
 .liw{
     text-align: center;
-    font-size: 12px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin-top: -38px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: -25px;
 }
 
+/* Media query ko 900px se badha kar 1200px karein */
+@media screen and (max-width: 1200px) {
+  .main {
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
 
+  .navbar {
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
 
+  .icon, .logo, .menu {
+    float: none !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center;
+    padding-left: 0 !important;
+  }
+
+  ul {
+    float: none !important;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li {
+    margin: 8px 12px !important;
+  }
+
+  .search {
+    float: none !important;
+    margin: 15px auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .srch {
+    width: 180px !important;
+  }
+
+  .btn {
+    width: 80px !important;
+  }
+
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0 20px !important;
+    margin-top: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .content h1 {
+    font-size: 32px !important;
+    padding-left: 0 !important;
+    margin-top: 10px !important;
+  }
+
+  .content p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    padding-left: 0 !important;
+    padding-bottom: 15px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .content .cn {
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* CSS File ke bilkul niche */
+
+@media screen and (max-width: 900px) {
+  
+  /* Aapki baki responsive media query yahan pehle se hogi */
+
+  /* FORM KA RESPONSIVE FIX (ISSE MEDIA QUERY KE ANDAR PASTE KAREIN) */
+  /* FORM OVERFLOW & RESPONSIVE FIX */
+.form {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 20px auto !important;
+  width: 90% !important;
+  max-width: 300px !important;
+  height: auto !important;
+  padding: 25px 15px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important; /* Baahar nikalne se rokega */
+}
+
+/* "Login Here" Heading Fix */
+.form h2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto 15px auto !important;
+  padding: 10px 0 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  font-size: 18px !important;
+}
+
+/* Email and Password Inputs Fix */
+/* INPUT FIELDS EXACT ADJUSTMENT FIX */
+.form input {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  font-size: 11px !important;            /* Text chota karne ke liye */
+  letter-spacing: -0.5px !important;    /* Letters ko paas lane ke liye */
+  padding: 6px 2px !important;          /* Side padding hatayi taaki jagah mile */
+  margin-top: 15px !important;
+  text-overflow: ellipsis !important;   /* Overflow control */
+}
+
+/* Placeholder Text Adjustment */
+.form input::placeholder {
+  font-size: 10px !important;           /* "Enter Email Here" fit aane ke liye */
+  letter-spacing: -0.3px !important;
+}
+
+/* Login Button Fix */
+.btnn, 
+.form .btnn {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin-top: 20px !important;
+  font-size: 16px !important;
+}
+
+/* Bottom Text Links Fix */
+.form .link, 
+.form .liw,
+.form p {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  font-size: 13px !important;
+  margin-top: 10px !important;
+}
+
+}
+}
+ 
