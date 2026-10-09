@@ -424,3 +424,46 @@ ul li a:hover{
 }
 }
  
+
+/* Navbar responsive fix */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        padding: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+}
